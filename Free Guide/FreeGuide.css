@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  background: url("https://i.pinimg.com/736x/2c/46/fa/2c46fa83a59fdf8d87fb18283930c695.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+.container {
+  display: flex;                                                                                                                                                                                                                                                                                                                                                            
+  padding: 50px 100px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.left-section {
+  width: 80%;
+  margin-right: 20px;
+}
+
+.left-section h1 {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.left-section p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.left-section img {
+  width: 500px;
+  height: 250px;
+}
+
+.form-section {
+  width: 60%;
+  height: 495px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 70px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 95%;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  border: none;
+  border-radius: 50px;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #f38f39;
+}
+
+.checkbox {
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+input[type="checkbox"] {
+  appearance: none;
+  background-color: #fff;
+  border: 2px solid #f38f39;
+  padding: 6px;
+  border-radius: 4px;
+  position: relative;
+  top: 7.4px;
+  left: 3px;
+}
+input[type="checkbox"]:checked {
+  background-color: #f38f39;
+  border: 2px solid #f38f39;
+}
+input[type="checkbox"]:checked::after {
+  content: "✔";
+  color: white;
+  position: absolute;
+  top: -4px;
+  right: 1px;
+  font-size: 14px;
+}
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #f38f39;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+button:hover {
+  background-color: #464554;
+}
+
+.privacy-text {
+  font-size: 15px;
+  /* margin-bottom: 10px; */
+}

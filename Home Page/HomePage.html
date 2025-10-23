@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="icon" type="image/png" href="../Images/Visit Egypt.webp" />
+    <title>Visit Egypt With Team BALMAR</title>
+
+    <link rel="stylesheet" href="../Header & Footer/Header&Footer.css" />
+    <link rel="stylesheet" href="HomePage.css" />
+  </head>
+  <body>
+    <!-- !Header Start -->
+
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="../Home Page/HomePage.html">
+            <img src="../Images/Logo.webp" alt="" />
+          </a>
+        </div>
+        <nav>
+          <a href="../Tour Packages/TourPackages.html">Tour Packages</a>
+          <a href="../Places To Visit/PlacesToVisit.html">Places To Visit</a>
+          <a href="../Free Guide/FreeGuide.html">visit Egypt Free Guide</a>
+          <a href="../Contact/Contact.html">Contact</a>
+        </nav>
+        <div class="icons">
+          <div class="icon">
+            <i class="fa-solid fa-magnifying-glass icon1"></i>
+          </div>
+          <div class="icon_profile">
+            <i class="fa-solid fa-user icon2"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="searchBox" class="search-popup">
+      <input type="text" name="text" id="searchInput" placeholder="Search..." />
+      <label for="text" onclick="searchPage()">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </label>
+    </div>
+
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h2>Signin</h2>
+        <form>
+          <label for="username">Username</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Username"
+            required
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="******"
+            required
+          />
+          <button type="submit">LOGIN</button>
+
+          <div class="links">
+            <p><a href="#">Lost your password?</a></p>
+            <p class="register-text">
+              Don’t have an account?
+              <a href="../SignUp/SignUp.html">Register</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- !Header End -->
+
+    <!-- !Home Start -->
+
+    <!-- !Section 1 Start  -->
+
+    <section id="home-page" class="home">
+      <div class="bg-video">
+        <video autoplay muted loop>
+          <source src="../Images/Background Video.mp4" type="video/mp4" />
+          Your browser doesn't support the video tag.
+        </video>
+      </div>
+      <div class="content">
+        <span class="home-span bilbo-swash-caps-regular">Visit Egypt</span>
+        <h1>Where Would You Like To Go?</h1>
+        <p>Find the Most Beautiful & Historic Places Around Egypt</p>
+        <a href="../Tour Packages/TourPackages.html">
+          <button>
+            <i class="fa-solid fa-plane-departure"></i>
+            Book Your Trip Now!
+          </button>
+        </a>
+        <div>
+          <a href="#categories" class="go-down">
+            <i class="fa-solid fa-angles-down fa-bounce"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- !Section 1 End  -->
+
+    <!-- !Section 2 Start  -->
+
+    <section id="categories" class="categories">
+      <div class="title">
+        <h2 class="main-title">Browse Categories</h2>
+      </div>
+      <div class="categories-cards">
+        <div class="box1">
+          <div class="card card1">
+            <i class="fa-solid fa-ankh"></i>
+            <p>Ancient Egypt</p>
+          </div>
+          <div class="card card2">
+            <i class="fa-solid fa-umbrella-beach"></i>
+            <p>Beaches</p>
+          </div>
+          <div class="card card3">
+            <i class="fa-solid fa-ship"></i>
+            <p>Cruises</p>
+          </div>
+          <div class="card card4">
+            <i class="fa-solid fa-earth-americas"></i>
+            <p>Oases & Deserts</p>
+          </div>
+        </div>
+        <div class="box2">
+          <div class="card card5">
+            <i class="fa-solid fa-mosque"></i>
+            <p>Islamic</p>
+          </div>
+          <div class="card card6">
+            <i class="fa-solid fa-church"></i>
+            <p>Coptic</p>
+          </div>
+          <div class="card card7">
+            <i class="fa-solid fa-landmark"></i>
+            <p>Museums</p>
+          </div>
+          <div class="card card8">
+            <i class="fa-solid fa-person-hiking"></i>
+            <p>Outdoor Sports</p>
+          </div>
+          <div class="card card9">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <p>Shopping</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="#packages" class="go-down">
+          <i class="fa-solid fa-angles-down fa-bounce"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- !Section 2 End  -->
+
+    <!-- !Section 3 Start  -->
+
+    <section id="packages" class="packages">
+      <div class="title">
+        <span class="home-span">Plan Your Trip</span>
+        <h2 class="main-title">Exclusive Packages</h2>
+      </div>
+      <div class="packages-container">
+        <div class="packages-content">
+          <div class="cards">
+            <div class="card-image">
+              <img src="../Images/CairoLuxorToAswan-03.webp" alt="" />
+            </div>
+            <div class="card-content">
+              <div class="Icons">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <div class="card-text">
+                <h3>Pharaoh's Journey</h3>
+                <p>From <span> $1200</span></p>
+              </div>
+              <button class="btn">Explore</button>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="card-image">
+              <img src="../Images/CairoLuxorToAswan-06.webp" alt="" />
+            </div>
+            <div class="card-content">
+              <div class="Icons">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <div class="card-text">
+                <h3>Discover the Wonders of Ancient Egypt</h3>
+                <p>From <span> $2500</span></p>
+              </div>
+              <button class="btn">Explore</button>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="card-image">
+              <img src="../Images/cairo-siwa-03.webp" alt="" />
+            </div>
+            <div class="card-content">
+              <div class="Icons">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <div class="card-text">
+                <h3>Cairo, Siwa & Alexandria Adventure</h3>
+                <p>From <span> $2168</span></p>
+              </div>
+              <button class="btn">Explore</button>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="card-image">
+              <img src="../Images/Discover-Your-Passions-08.webp" alt="" />
+            </div>
+            <div class="card-content">
+              <div class="Icons">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <div class="card-text">
+                <h3>Discover Your Passions</h3>
+                <p>From <span> $1414</span></p>
+              </div>
+              <button class="btn">Explore</button>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="card-image">
+              <img src="../Images/CairoLuxorToAswan-07.webp" alt="" />
+            </div>
+            <div class="card-content">
+              <div class="Icons">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <div class="card-text">
+                <h3>Egypt In Style</h3>
+                <p>From <span> $1340</span></p>
+              </div>
+              <button class="btn">Explore</button>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="card-image">
+              <img src="../Images/CairoLuxorToAswan-17.webp" alt="" />
+            </div>
+            <div class="card-content">
+              <div class="Icons">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <div class="card-text">
+                <h3>Enchanting Egypt</h3>
+                <p>From <span> $1050</span></p>
+              </div>
+              <button class="btn">Explore</button>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="card-image">
+              <img src="../Images/CairoLuxorToAswan-01.webp" alt="" />
+            </div>
+            <div class="card-content">
+              <div class="Icons">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <div class="card-text">
+                <h3>Explore Egypt</h3>
+                <p>From <span> $1500</span></p>
+              </div>
+              <button class="btn">Explore</button>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="card-image">
+              <img src="../Images/CairoLuxorToAswan-10.webp" alt="" />
+            </div>
+            <div class="card-content">
+              <div class="Icons">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <div class="card-text">
+                <h3>Nile Legacy Luxor And Cairo Adventure</h3>
+                <p>From <span> $850</span></p>
+              </div>
+              <button class="btn">Explore</button>
+            </div>
+          </div>
+          <div class="cards">
+            <div class="card-image">
+              <img src="../Images/Last-trip.webp" alt="" />
+            </div>
+            <div class="card-content">
+              <div class="Icons">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-heart"></i>
+              </div>
+              <div class="card-text">
+                <h3>Pyramids Pathaway</h3>
+                <p>From <span> $2640</span></p>
+              </div>
+              <button class="btn">Explore</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="numbers">
+        <div class="number one">1</div>
+        <div class="number">2</div>
+        <div class="number">3</div>
+        <div class="number">4</div>
+        <div class="number">Next <small>>></small></div>
+      </div>
+      <div>
+        <a href="#ancient-places" class="go-down">
+          <i class="fa-solid fa-angles-down fa-bounce"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- !Section 3 End  -->
+
+    <!-- !Section 4 Start  -->
+
+    <section id="ancient-places">
+      <div class="ancient-places">
+        <div class="title">
+          <span class="home-span">Destination lists</span>
+          <h2 class="main-title">Go To Ancient Places</h2>
+        </div>
+
+        <div class="cards-section">
+          <div class="place-card">
+            <img
+              src="../Images/giza-pyramid-EGYPTSECRETS1016-617b2b1b23dd4fd38bc9f365af7235ab.webp"
+              alt="Manial place Museum"
+            />
+            <div class="text">The Great Pyramids</div>
+          </div>
+          <div class="place-card large">
+            <img src="../Images/red-sea222.webp" alt="Temple of Edfu" />
+            <span class="home-span">Beaches</span>
+            <div class="text">Discover the Red Sea</div>
+          </div>
+          <div class="place-card">
+            <img
+              src="../Images/shutterstock_2449878561.webp"
+              alt="the-mosque-madrassa-of-sultan-hassan"
+            />
+            <div class="text">Ancient Egypt</div>
+          </div>
+          <div class="place-card">
+            <img src="../Images/alexandria.jpg" alt="Manial place Museum" />
+            <span class="home-span">Visit</span>
+            <div class="text">Alexandria</div>
+          </div>
+          <div class="place-card large">
+            <img
+              src="../Images/statues-entrance-Ramses-II-Luxor-temple-complex.webp"
+              alt="Temple of Edfu"
+            />
+            <span class="home-span">Tombs of </span>
+            <div class="text">Luxor</div>
+          </div>
+          <div class="place-card">
+            <img
+              src="../Images/Hurghada.webp"
+              alt="the-mosque-madrassa-of-sultan-hassan"
+            />
+            <div class="text">Visit Egypt</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="#plan-trip" class="go-down">
+          <i class="fa-solid fa-angles-down fa-bounce"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- !Section 4 End  -->
+
+    <!-- !Section 5 Start  -->
+
+    <section id="plan-trip">
+      <div class="plan-trip">
+        <div class="left">
+          <div class="title">
+            <span class="home-span">Visit Egypt</span>
+            <h2 class="main-title">Plan Your Trip with Us</h2>
+          </div>
+          <div class="text">
+            <p>
+              Egypt is one of the most historical places on the Earth. With it's
+              ancient history and natural beauties, Egypt is the place that
+              everyone has on their bucket list. Join us and embark on a trip
+              for a lifetime!
+            </p>
+          </div>
+          <div class="check">
+            <div class="c">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Explore Ancient Ruins & Tombs</p>
+            </div>
+            <div class="c">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Have fun on the most beautiful beaches</p>
+            </div>
+            <div class="c">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Experience a culture like no other</p>
+            </div>
+          </div>
+          <button>Plan Your Trip Now</button>
+        </div>
+        <div class="right">
+          <img src="../Images/shutterstock_2449883975.webp" alt="" />
+          <div class="circle1"></div>
+          <div class="circle2"></div>
+        </div>
+      </div>
+      <div>
+        <a href="#tours-gride" class="go-down">
+          <i class="fa-solid fa-angles-down fa-bounce"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- !Section 5 End  -->
+
+    <!-- !Section 6 Start  -->
+
+    <section id="tours-gride">
+      <div class="tours-grid">
+        <div class="list">
+          <div class="list-column">
+            <h2>Featured Tours</h2>
+            <div class="single-list">
+              <img src="../Images/Last-trip.webp" alt="" />
+              <div class="list-content">
+                <h5>Pyramids Pathaway</h5>
+                <p>From <span>$2640</span></p>
+              </div>
+            </div>
+            <div class="single-list">
+              <img src="../Images/Discover-Your-Passions-06.webp" alt="" />
+              <div class="list-content">
+                <h5>7 days/6 nights Cairo, Aswan, Luxor and Abu Simbel</h5>
+                <p>From <span>$2585</span></p>
+              </div>
+            </div>
+            <div class="single-list">
+              <img src="../Images/CairoLuxorToAswan-06.webp" alt="" />
+              <div class="list-content">
+                <h5>Discover the Wonders of Ancient Egypt</h5>
+                <p>From <span>$2500</span></p>
+              </div>
+            </div>
+            <div class="single-list">
+              <img src="../Images/Discover-Your-Passions-09.webp" alt="" />
+              <div class="list-content">
+                <h5>Luxury Nile & Desert Retreat (10 Days)</h5>
+                <p>From <span>$2500</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="list-column">
+            <h2>Best Price</h2>
+            <div class="single-list">
+              <img src="../Images/Egypts-Map.webp" alt="" />
+              <div class="list-content">
+                <h5>Customize Your Trip</h5>
+                <p>From <span>$0</span></p>
+              </div>
+            </div>
+            <div class="single-list">
+              <img src="../Images/Half-05.webp" alt="" />
+              <div class="list-content">
+                <h5>Half-Day Citadel Trip</h5>
+                <p>From <span>$149</span></p>
+              </div>
+            </div>
+            <div class="single-list">
+              <img src="../Images/CairoLuxorToAswan-04.webp" alt="" />
+              <div class="list-content">
+                <h5>
+                  One-Day Itinerary: Pyramids, Sphinx, and Grand Egyptian Museum
+                </h5>
+                <p>From <span>$149</span></p>
+              </div>
+            </div>
+            <div class="single-list">
+              <img src="../Images/CairoLuxorToAswan-05.webp" alt="" />
+              <div class="list-content">
+                <h5>Pyramids Day Trip</h5>
+                <p>From <span>$250</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="list-column">
+            <h2>Best Rating</h2>
+            <div class="single-list">
+              <img src="../Images/CairoLuxorToAswan-03.webp" alt="" />
+              <div class="list-content">
+                <h5>Pharaoh's Journey</h5>
+                <p>From <span>$1200</span></p>
+              </div>
+            </div>
+            <div class="single-list">
+              <img src="../Images/CairoLuxorToAswan-06.webp" alt="" />
+              <div class="list-content">
+                <h5>Discover the Wonders of Ancient Egypt</h5>
+                <p>From <span>$2500</span></p>
+              </div>
+            </div>
+            <div class="single-list">
+              <img src="../Images/cairo-siwa-03.webp" alt="" />
+              <div class="list-content">
+                <h5>Cairo, Siwa & Alexandria Adventure</h5>
+                <p>From <span>$2168</span></p>
+              </div>
+            </div>
+            <div class="single-list">
+              <img src="../Images/Discover-Your-Passions-08.webp" alt="" />
+              <div class="list-content">
+                <h5>Discover Your Passions</h5>
+                <p>From <span>$1414</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- !Section 6 End  -->
+
+    <!-- !Home End -->
+
+    <!-- !Footer Start  -->
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-about">
+          <img src="../Images/Visit-Egypt-122.webp" alt="" />
+          <p>Beyond the Pyramids:</p>
+          <p>Experience the Heart of Egypt.</p>
+
+          <div class="pe">
+            <a href="mailto:InfoBALMAR@visitegypt.com" class="contact-link">
+              <i class="fas fa-envelope"></i> InfoBALMR@visitegypt.com
+            </a>
+            <a href="tel:+01111645045" class="contact-link">
+              <i class="fas fa-phone-alt"></i> 01111645045
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h3>Explore</h3>
+          <ul>
+            <li><a href="#" class="footer-link">About Us</a></li>
+            <li><a href="#" class="footer-link">Places To Go</a></li>
+            <li><a href="#" class="footer-link">Plan Your Visit</a></li>
+            <li><a href="#" class="footer-link">Customize Your Trip</a></li>
+            <li><a href="#" class="footer-link">News & Blog</a></li>
+            <li><a href="#" class="footer-link">Useful Information</a></li>
+            <li><a href="#" class="footer-link">Events</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h3>VisitEgypt.com</h3>
+          <ul>
+            <li><a href="#" class="footer-link">Terms & Conditions</a></li>
+            <li><a href="#" class="footer-link">Travel Agencies</a></li>
+            <li><a href="#" class="footer-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h3>Newsletter</h3>
+          <form>
+            <input type="email" placeholder="Email address" required />
+            <br /><br />
+            <button type="submit">SUBSCRIBE</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>
+          &copy; 2025 Team BALMR. All rights reserved
+          <i class="fa-solid fa-face-grin"></i> .
+        </span>
+      </div>
+
+      <a href="#home-page" class="scroll-to-top">
+        <i class="fa-solid fa-angles-up fa-bounce"></i>
+      </a>
+    </footer>
+
+    <!-- !Footer End -->
+
+    <script src="../Header & Footer/Header&Footer.js"></script>
+  </body>
+</html>
